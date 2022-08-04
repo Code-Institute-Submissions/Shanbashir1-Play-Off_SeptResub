@@ -168,4 +168,55 @@ body{
     padding: 0;
 }
 
+ /**Media Queries**/
+
+ /* Small Media to Medium screen size from min-width 280px to max-width 500px wide and down */
+
+ @media screen and (min-width: 280px) and (max-width:500px) {
+    .play {
+        font-size: 20px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-box {
+        width: 200px;
+        height: 30vh;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    .footer {
+        font-size: 35px;
+        margin-bottom: 0;
+        
+    }
+
+    .follow {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .join {
+        font-size: 0.8rem;
+    }
+
+    #footer-email-btn {
+        width: 30vw;
+        height: 25px;
+        text-align: center;
+        margin-bottom: 0;
+
+    }
+    #footer-email {
+        width: 60vw;
+        font-size: 10px;
+    }
+
+
+
+ }
+
 
