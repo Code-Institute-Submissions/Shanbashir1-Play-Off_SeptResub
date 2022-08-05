@@ -180,8 +180,11 @@ body{
     }
 
     .main-box {
-        width: 200px;
-        height: 30vh;
+        width: 100vw;
+        height: 60vh;
+        padding-right: 1rem;
+        justify-content: center;
+        padding-left: 1rem;
     }
 
     body {
@@ -214,7 +217,10 @@ body{
         width: 60vw;
         font-size: 10px;
     }
-
+.btn {
+    padding: 1rem 1rem;
+    gap:2px;
+}
 
 
  }
