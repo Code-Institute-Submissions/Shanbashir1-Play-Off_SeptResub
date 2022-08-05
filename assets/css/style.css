@@ -73,12 +73,22 @@ body{
     padding: 10px 20px;
 }
 
+
+#instruction {
+    color:#3a3a3a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
 /* design the controls and hide elements */
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
 }
 .hide {
     display: none;

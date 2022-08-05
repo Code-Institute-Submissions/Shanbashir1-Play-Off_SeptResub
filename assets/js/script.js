@@ -11,9 +11,10 @@ let scoreBar = document.getElementById('score-bar')
 let scoreElement = document.getElementById('score');
 let questionCounter;
 let shuffledQuestions, currentQuestionIndex;
+let instructionElement = document.getElementById('instruction')
 
     /**
- * Adding eventListeners to Start & Next Button
+ * Adding eventListeners to Start & Next Button, so when clicked the function will start the game.
  */
     startButton.addEventListener("click", startGame);
     nextButton.addEventListener("click", () => {
@@ -22,10 +23,13 @@ let shuffledQuestions, currentQuestionIndex;
  });
  /**
  * Start Game Function and setting variables to 0
+ * The main page will display some instructions of the type of game, once the start button
+ * is implemented the function will hide the instruction element and activate the questions and answers
  */
   function startGame() {
     questionCounter = 0;
     startButton.classList.add('hide');
+    instructionElement.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random(- .5));
     currentQuestionIndex = 0;
     questionBoxElement.classList.remove('hide');
@@ -107,7 +111,7 @@ function showQuestion(question) {
     };
 
  /**
- * This function select the correct and incorrect answers using "correct and wrong elements". 
+ * This function selects the correct and incorrect answers using "correct and wrong elements". 
  */
  function setStatusClass(element, correct){
     clearStatusClass(element)
@@ -120,7 +124,7 @@ function showQuestion(question) {
 
 };
   /**
- * This function  to clear status of the selected correct and incorrect answers.
+ * This function is to clear the status of the selected correct and incorrect answers.
  */
  function clearStatusClass(element) {
     element.classList.remove('correct');
@@ -144,8 +148,9 @@ function showQuestion(question) {
     counterElement.innerHTML = questionCounter;
 }
 
-
-
+  /**
+ * Array of question - Max 10 questions about Football events 
+ */
 
 let questions = [
 
@@ -214,6 +219,51 @@ let questions = [
         ]
 
     }, 
+
+    {
+        question: 'Which team has won the mostest Premier League titles?',
+        answers: [
+            { text: 'Everton', correct: false },
+            { text: 'Man Utd', correct: true },
+            { text: 'Liverpool', correct: false },
+            { text: 'Arsernal', correct: false }
+        ]
+
+    }, 
+
+    {
+        question: 'Who was the most expensive football transfer of all time?',
+        answers: [
+            { text: 'Ronaldo', correct: false },
+            { text: 'Neymar', correct: true },
+            { text: 'Messi', correct: false },
+            { text: 'Jack Grealish', correct: false }
+        ]
+
+    },    
+    
+    {
+        question: 'What was the first ever international football match?',
+        answers: [
+            { text: 'Scotland V England', correct: true },
+            { text: 'Germany V England', correct: false },
+            { text: 'Italy V Brazil', correct: false },
+            { text: 'Germany V France', correct: false }
+        ]
+
+    }, 
+
+    {
+        question: 'Who won the 1998 Fifa World Cup?',
+        answers: [
+            { text: 'France', correct: true },
+            { text: 'Brazil', correct: false },
+            { text: 'Germany', correct: false },
+            { text: 'Italy', correct: false }
+        ]
+
+    }, 
+
 
 ];
 
