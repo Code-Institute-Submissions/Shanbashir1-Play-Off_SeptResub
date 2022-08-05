@@ -18,7 +18,24 @@ let shuffledQuestions, currentQuestionIndex;
  * Start Game Function and setting variables to 0
  */
 function startGame() {
-
+    /**
+ * Adding eventListeners to Start & Next Button
+ */
+ startButton.addEventListener("click", startGame);
+ nextButton.addEventListener("click", () => {
+     currentQuestionIndex++
+     setNextQuestion();
+ });
+ 
+ questionCounter = 0;
+ startButton.classList.add('hide');
+ shuffledQuestions = questions.sort(() => Math.random(- .5));
+ currentQuestionIndex = 0;
+ questionBoxElement.classList.remove('hide');
+ scoreBar.classList.remove('hide');
+ setNextQuestion();
+ scoreElement.textContent = 0;
+ counter.textContent = 0;
 }
 
  /**
