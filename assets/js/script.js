@@ -12,30 +12,27 @@ let scoreElement = document.getElementById('score');
 let questionCounter;
 let shuffledQuestions, currentQuestionIndex;
 
- 
- 
- /**
- * Start Game Function and setting variables to 0
- */
-function startGame() {
     /**
  * Adding eventListeners to Start & Next Button
  */
- startButton.addEventListener("click", startGame);
- nextButton.addEventListener("click", () => {
-     currentQuestionIndex++
-     setNextQuestion();
+    startButton.addEventListener("click", startGame);
+    nextButton.addEventListener("click", () => {
+    currentQuestionIndex++
+    setNextQuestion();
  });
-
- questionCounter = 0;
- startButton.classList.add('hide');
- shuffledQuestions = questions.sort(() => Math.random(- .5));
- currentQuestionIndex = 0;
- questionBoxElement.classList.remove('hide');
- scoreBar.classList.remove('hide');
- setNextQuestion();
- scoreElement.textContent = 0;
- counter.textContent = 0;
+ /**
+ * Start Game Function and setting variables to 0
+ */
+  function startGame() {
+    questionCounter = 0;
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random(- .5));
+    currentQuestionIndex = 0;
+    questionBoxElement.classList.remove('hide');
+    scoreBar.classList.remove('hide');
+    setNextQuestion();
+    scoreElement.textContent = 0;
+    counter.textContent = 0;
 }
 
 /**
@@ -49,34 +46,105 @@ function startGame() {
 
 }
 
-
  /**
  * This function will show the Question 
  */
 function showQuestion(question) {
+    questionCounter++;
+    counterElement.innerHTML = questionCounter;
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+    let button = document.createElement('button')
+    button.innerText = answer.text
+    button.classList.add('btn');
 
+    if (answer.correct) {
+        button.dataset.correct = answer.correct
+    }
+
+    button.addEventListener('click', selectAnswer)
+    answerButtonsElement.appendChild(button)
+        
+    });
 }
+
+ /**
+ * This function resets the status and removes answer buttons  
+ */
+ function resetState() {
+    clearStatusClass(document.body)
+    nextButton.classList.add('hide')
+    while(answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild
+    (answerButtonsElement.firstChild)
+    }
+ };
+ 
 
 /**
  * This function will give the user the ability to select answers from the arrays of listed answers. 
  */
- function selectAnswer(i) {
+    function selectAnswer(i) {
+    let selectedButton = i.target
+    let correct = selectedButton.dataset.correct
+    
+    processResults(correct);
+    setStatusClass(document.body, correct)
+    
+    Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+    });
 
- }
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+    } 
+        
+    else {
+        startButton.innerText = "Restart";
+        startButton.classList.remove('hide');
+    };
+    
+    };
 
  /**
  * This function select the correct and incorrect answers using "correct and wrong elements". 
  */
- function setStatusClass(){
- }
+ function setStatusClass(element, correct){
+    clearStatusClass(element)
+    if (correct) {
+    element.classList.add('correct');
+    }
+    else {
+    element.classList.add('wrong');
+    }
 
+};
   /**
  * This function  to clear status of the selected correct and incorrect answers.
  */
- function clearStatusClass() {
-
-
+ function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
  }
+
+  /**
+ * This function  to process result when correct.
+ * Score element incremenet by 1 
+ * Counter element changes when the question move on to next question
+ */
+ function processResults (isCorrect) {
+    if (!isCorrect) {
+        return;
+    }
+ let score = parseInt(scoreElement.textContent, 10) || 0;
+
+    scoreElement.textContent = score + 1;
+
+ let counter = parseInt(counterElement.textContent, 10);
+    counterElement.innerHTML = questionCounter;
+}
+
+
 
 
 let questions = [

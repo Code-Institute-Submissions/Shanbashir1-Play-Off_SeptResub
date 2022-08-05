@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     justify-content:center ;
     align-items: center;
 
@@ -22,7 +22,7 @@ body{
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-top:3rem;
+    margin-top:5rem;
     margin-bottom: 2%;
 }
 
@@ -30,7 +30,7 @@ body{
 
 .main-box {
     width: 500px;
-    height: 50vh;
+    height: 60vh;
     background-color: #fff;;
     border-radius: 5px;
     padding: 15px 5px;
