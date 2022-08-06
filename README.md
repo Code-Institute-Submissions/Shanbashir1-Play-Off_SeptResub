@@ -4,6 +4,8 @@
 ## Introduction
 Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
 
+<img src="/readme-images/am-i-responsive" alt = "Am I Responsive" style="height: 100px; width: 900px;">
+
 ## User Stories
 + As a first time user I will need to know what the game is about and what type of question I should expect.
 + As a user I would need to be aware of the controls and functions of the game. 
@@ -67,13 +69,79 @@ For my second project JavaScript I was able to use a wide range of programes to 
 
 + HTML used to create the body structure and layout of the web page. The structure was designed using the coding language used for HTML.
 + CSS used to create the design and style feature to make the web page colourful and eye cathching for the user. The CSS was used in conjuction with the HTML structure.
-+ JavaScript was used to create functions and implement the game. JavaScript is a cre
++ JavaScript was used to create functions and implement the game. JavaScript is a programming language that is one of the coretechnologies of the world wide web Its is used alongside HTML and CSS. JavaScript was able to create the quiz structure so that the user is able to play the quiz game.
 + GITHUB was used to create, host and deploy the web design on to the platform. The benefit of github was to create repositories, branches, commits, and pull requests. Github was also a great way to share your design to mentors and other colleagues and tutors to help view your code and seek further input and support.
 + GITPOD Gitpod allows you to define your project's configuration in code so you can launch a prebuilt development environment with one click.(Source Google) Gitpod was used to code all my HTML and CSS coding.
 + Font Awesome Font Awesome was used to select icons to make the images relate to the headers. Font awesome added a attractive image to my page.
 + Balsamiq This was used to create the wireframes during the design phase of the project, initally my design was made on a notepad, until balsamiq was mentioned for use.
 + Google Fonts - This app was used to select the LATO and PT Serif fonts, however mid way into the project i decided to use Arial and Sans Serif though out the project.
 + Am I Responsive, this was used in order to see responsive design throughout the process and view different responsive designs.
+
+## Testing - HTML AND CSS Testing
++ Lighthouse - Lighthouse Test I tested via the Google Developer Lighthouse check. Below is a screenshot of my results.
+
+
++ The W3C Markup Validation Service https://validator.w3.org The coding was checked via W3 validator, My check revealed I had no errors or warnings
+
++ The W3C CSS Validation Service - Jigsaw The CSS code was check via The W3C CSS Validation Service - Jigsaw https://jigsaw.w3.org/css-validator/. My check revealed I had no errors or warnings
+
+
++ Chrome Stimulator The app was used to test the website on different browsers and devices. Test were operated repeatedly during all devleopment stages.
+
++ Supported browsers and platforms Google Chrome (latest version) — Windows, Mac OS X, iOS, Android Mozilla Firefox (latest version) — Windows
+
+## Testing - JavaScript 
++ Jshint 
+
+## Test Cases
+
+Home Page - The main page will be the home page when clicked will navigate the user to the home page. The Home page will consists of a zoom animation image, package deals, which when clicked on will take the user onto the sign up page. The Home page will also display a map of the gym location.
+Why Join us page - This page when clicked will navigate the user to the why join us page?. This page will display a image followed by a list of why the user should join the Work Hard Gym.
+Sign up Now Page This page when clicked will navigate the user to the sign up now page. This page will have a backgrounbd image. The page main feature will be a form with required input. The user will need to enter they're First Name, Last Name, if these fields are not completed then a error message will be displayed, showing the following message "!Please fill out this field". The email address will need to have the correct input i.e aaaa@hotmail.com otherwise this will also show the following "!Please include an @ in the email address". Contact Number a number will need to be entered into this field as this will be a required field. If a telephone number has not been entered then the following error messsage will be displayed "!Please fill out this field" Choose your package a package will have a radio selection, one package must be entered as this is also a required field. If a package has not been selected then the following error messsage will be displayed "!Please select one of these options"
+
+
+## Fixed Bugs
++ Spacing for HTML & CSS - after chekcing my coding for both HTML and CSS I realised I had unnecessary spacing. These were deleated and the structure made tidy for viewing.
++ Media Screen Sizes - I realised that my media screen sizes were not displaying the correct layout for mobile devices. These were fixed and checked via Am I responsive app and the google developer tool.
++ After testing on Jshint - mycode had various missing semicolons, which were fixed. 
+
+## Unfixed Bugs
+There was no unfixed bugs by the time this was written.
+
+## Deployment
+### GITHUB
++ To deploy pages to Github the following steps were taken.
+
++ Login into your GITHUB account if you do not have one, you will need to create one
++ Find Repository button and open page
++ Locate the setting button and then locate the pages button.
++ You will then need to click the source button, on the tab labelled "none" select "main"
++ Once "main" has been selected the page will start to deploy, this will take a few minutes to deploy.
++ Once the link turns green, your link will be deployed.
+
+### GITPOD
++ Some useful feature and pathways to note for Gitpod are as follows open pre-design of webpage(browser) "python3 -m http.server".
++ To save work git add .
++ To commit git commit -m TYPE MESSAGE i.e "added image to front page"
+push your work to GITHUB repositories git push.
+
+## Credits
+A list of my credits are below
+
++ Code Institue Learning guide and past coding examples
++ Love Maths Tutorial
++ Font Awesome - used for Icons
++ Bro Code = youtube video "How to use JavaScript"
++ Web Dev Simplified - tips on creating apps using JavaScript 
++ Coding with Nick - Help on creating workable functions. 
++ W3schools.com - Help with CSS coding
++ stackoverflow.com - help with coding, by visiting past forums.
+
+## Acknowledgement
+
++ My mentor Rohit Sharma @rohit_mentor - Great advice and support throughout my project journey, I was guided well with plenty of advise and support.
++ Tutor Suport - So much help from a wide diversity of tutors. They were able to support me in good time and made me realise when things became difficult.
++ Slack - Always so much help from colleagues, the level of support is undoubtedly amazing.
 
 
 
