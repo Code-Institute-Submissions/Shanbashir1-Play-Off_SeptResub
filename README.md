@@ -4,7 +4,7 @@
 ## Introduction
 Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
 
-<img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 100px; width: 900px;">
+<img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 400px; width: 700px;">
 
 ## User Stories
 + As a first time user I will need to know what the game is about and what type of question I should expect.
@@ -82,10 +82,10 @@ For my second project JavaScript I was able to use a wide range of programes to 
 
 
 + The W3C Markup Validation Service https://validator.w3.org The HMTL coding was checked via W3 validator, My check revealed I had no errors or warnings
-<img src="/readme-images/w3Html.png" alt = "W3 Validator HTML" style="height: 100px; width: 900px;">
+<img src="/readme-images/w3Html.png" alt = "W3 Validator HTML" style="height: 400px; width: 700px;">
 
 + The W3C CSS Validation Service - Jigsaw The CSS code was check via The W3C CSS Validation Service - Jigsaw https://jigsaw.w3.org/css-validator/. My check revealed I had no errors or warnings
-<img src="/readme-images/W3css.png" alt = "W3 Jigsaw CSS" style="height: 100px; width: 900px;">
+<img src="/readme-images/W3css.png" alt = "W3 Jigsaw CSS" style="height: 400px; width: 700px;">
 
 
 
@@ -96,12 +96,10 @@ For my second project JavaScript I was able to use a wide range of programes to 
 ## Testing - JavaScript 
 + Jshint 
 
-<img src="/readme-images/jshint.png" alt = "JShint " style="height: 100px; width: 900px;">
+<img src="/readme-images/jshint.png" alt = "JShint " style="height: 600px; width: 800px;">
+
 ## Test Cases
 
-Home Page - The main page will be the home page when clicked will navigate the user to the home page. The Home page will consists of a zoom animation image, package deals, which when clicked on will take the user onto the sign up page. The Home page will also display a map of the gym location.
-Why Join us page - This page when clicked will navigate the user to the why join us page?. This page will display a image followed by a list of why the user should join the Work Hard Gym.
-Sign up Now Page This page when clicked will navigate the user to the sign up now page. This page will have a backgrounbd image. The page main feature will be a form with required input. The user will need to enter they're First Name, Last Name, if these fields are not completed then a error message will be displayed, showing the following message "!Please fill out this field". The email address will need to have the correct input i.e aaaa@hotmail.com otherwise this will also show the following "!Please include an @ in the email address". Contact Number a number will need to be entered into this field as this will be a required field. If a telephone number has not been entered then the following error messsage will be displayed "!Please fill out this field" Choose your package a package will have a radio selection, one package must be entered as this is also a required field. If a package has not been selected then the following error messsage will be displayed "!Please select one of these options"
 
 
 ## Fixed Bugs
