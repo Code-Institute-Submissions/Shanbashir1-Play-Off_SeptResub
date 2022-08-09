@@ -1,24 +1,24 @@
  /**
  * Created variable and assigned elements to each.
  */  
-let startButton = document.getElementById('start-button')
-let nextButton = document.getElementById('next-button')
-let questionBoxElement = document.getElementById('question-box')
-let questionElement = document.getElementById('question')
-let answerButtonsElement = document.getElementById('answer-buttons')
-let counterElement = document.getElementById('counter')
-let scoreBar = document.getElementById('score-bar')
+let startButton = document.getElementById('start-button');
+let nextButton = document.getElementById('next-button');
+let questionBoxElement = document.getElementById('question-box');
+let questionElement = document.getElementById('question');
+let answerButtonsElement = document.getElementById('answer-buttons');
+let counterElement = document.getElementById('counter');
+let scoreBar = document.getElementById('score-bar');
 let scoreElement = document.getElementById('score');
 let questionCounter;
 let shuffledQuestions, currentQuestionIndex;
-let instructionElement = document.getElementById('instruction')
+let instructionElement = document.getElementById('instruction');
 
     /**
  * Adding eventListeners to Start & Next Button, so when clicked the function will start the game.
  */
     startButton.addEventListener("click", startGame);
     nextButton.addEventListener("click", () => {
-    currentQuestionIndex++
+    currentQuestionIndex++;
     setNextQuestion();
  });
  /**
@@ -30,7 +30,7 @@ let instructionElement = document.getElementById('instruction')
     questionCounter = 0;
     startButton.classList.add('hide');
     instructionElement.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random(- .5));
+    shuffledQuestions = questions.sort(() => Math.random(-5));
     currentQuestionIndex = 0;
     questionBoxElement.classList.remove('hide');
     scoreBar.classList.remove('hide');
@@ -45,7 +45,7 @@ let instructionElement = document.getElementById('instruction')
  */
 
  function setNextQuestion() {
-    resetState()
+    resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 
 }
@@ -56,18 +56,18 @@ let instructionElement = document.getElementById('instruction')
 function showQuestion(question) {
     questionCounter++;
     counterElement.innerHTML = questionCounter;
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-    let button = document.createElement('button')
-    button.innerText = answer.text
+    let button = document.createElement('button');
+    button.innerText = answer.text;
     button.classList.add('btn');
 
     if (answer.correct) {
-        button.dataset.correct = answer.correct
+        button.dataset.correct = answer.correct;
     }
 
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    button.addEventListener('click', selectAnswer);
+    answerButtonsElement.appendChild(button);
         
     });
 }
@@ -76,45 +76,45 @@ function showQuestion(question) {
  * This function resets the status and removes answer buttons  
  */
  function resetState() {
-    clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
     while(answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild
-    (answerButtonsElement.firstChild)
+    (answerButtonsElement.firstChild);
     }
- };
+ }
  
 
 /**
  * This function will give the user the ability to select answers from the arrays of listed answers. 
  */
     function selectAnswer(i) {
-    let selectedButton = i.target
-    let correct = selectedButton.dataset.correct
+    let selectedButton = i.target;
+    let correct = selectedButton.dataset.correct;
     
     processResults(correct);
-    setStatusClass(document.body, correct)
+    setStatusClass(document.body, correct);
     
     Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
+    setStatusClass(button, button.dataset.correct);
     });
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
+    nextButton.classList.remove('hide');
     } 
         
     else {
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-    };
+    }
     
-    };
+    }
 
  /**
  * This function selects the correct and incorrect answers using "correct and wrong elements". 
  */
  function setStatusClass(element, correct){
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
     element.classList.add('correct');
     }
@@ -122,7 +122,7 @@ function showQuestion(question) {
     element.classList.add('wrong');
     }
 
-};
+}
   /**
  * This function is to clear the status of the selected correct and incorrect answers.
  */

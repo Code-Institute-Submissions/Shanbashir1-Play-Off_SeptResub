@@ -4,7 +4,7 @@
 ## Introduction
 Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
 
-<img src="/readme-images/am-i-responsive" alt = "Am I Responsive" style="height: 100px; width: 900px;">
+<img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 100px; width: 900px;">
 
 ## User Stories
 + As a first time user I will need to know what the game is about and what type of question I should expect.
@@ -81,9 +81,12 @@ For my second project JavaScript I was able to use a wide range of programes to 
 + Lighthouse - Lighthouse Test I tested via the Google Developer Lighthouse check. Below is a screenshot of my results.
 
 
-+ The W3C Markup Validation Service https://validator.w3.org The coding was checked via W3 validator, My check revealed I had no errors or warnings
++ The W3C Markup Validation Service https://validator.w3.org The HMTL coding was checked via W3 validator, My check revealed I had no errors or warnings
+<img src="/readme-images/w3Html.png" alt = "W3 Validator HTML" style="height: 100px; width: 900px;">
 
 + The W3C CSS Validation Service - Jigsaw The CSS code was check via The W3C CSS Validation Service - Jigsaw https://jigsaw.w3.org/css-validator/. My check revealed I had no errors or warnings
+<img src="/readme-images/W3css.png" alt = "W3 Jigsaw CSS" style="height: 100px; width: 900px;">
+
 
 
 + Chrome Stimulator The app was used to test the website on different browsers and devices. Test were operated repeatedly during all devleopment stages.
@@ -93,6 +96,7 @@ For my second project JavaScript I was able to use a wide range of programes to 
 ## Testing - JavaScript 
 + Jshint 
 
+<img src="/readme-images/jshint.png" alt = "JShint " style="height: 100px; width: 900px;">
 ## Test Cases
 
 Home Page - The main page will be the home page when clicked will navigate the user to the home page. The Home page will consists of a zoom animation image, package deals, which when clicked on will take the user onto the sign up page. The Home page will also display a map of the gym location.
