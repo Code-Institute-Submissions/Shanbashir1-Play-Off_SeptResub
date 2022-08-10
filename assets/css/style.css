@@ -62,12 +62,12 @@ body {
 
 .btn.correct {
     --hue: var(--hue-correct);
-    background-color: lightgreen
+    background-color: #00cd00;
 }
 
 .btn.wrong {
     --hue: var(--hue-wrong);
-    background-color: lightpink;
+    background-color: #ff7373;
 
 }
 

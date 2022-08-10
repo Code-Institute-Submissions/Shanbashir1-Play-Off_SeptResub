@@ -4,7 +4,7 @@
 ## Introduction
 Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
 
-<img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 400px; width: 700px;">
+<img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 500px; width: 800px;">
 
 ## User Stories
 + As a first time user I will need to know what the game is about and what type of question I should expect.
@@ -41,8 +41,7 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 ### Footer 
 + The footer element will navigate the user to various social media pages.
 + "Follow us for new games available online" the following text will be above the social media links, to advise the user of our social media pages. The text will be a standard text format, with the colour of "white"
-+ "Subscribe to our games newsletter" will be a standard text which will navigate the user to the subscribe email registration form. 
-+ The form (SignUp) will be a link for the user to register using their email address. The form will acknowledge the users completed registration to the newsletter. 
+
 
 ## Future Features 
 + Audio, a possible future feature could be to introduce some background music, for the user to enjoy while working through the quiz.
@@ -51,11 +50,19 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 + A animation feature of a football, to attract the user while playing the quiz. Animation always create a better design and user tend to enjoy while navigating. 
 
 ## Color Scheme
-
+ ## Color Scheme
++ ![#00cd00](https://via.placeholder.com/15/00cd00/00cd00.png) `#00cd00`
++ ![#5a5a](https://via.placeholder.com/15/5a5a/5a5a.png) `#5a5a`
++ ![#3a3a3a](https://via.placeholder.com/15/3a3a3a/3a3a3a.png) `#3a3a3a`
++ ![#f16c6b](https://via.placeholder.com/15/f16c6b/f16c6b.png) `#f16c6b;`
++ ![#ff7373](https://via.placeholder.com/15/ff7373/ff7373.png) `#ff7373;`
 
 
 ## Font Display
-
+The Font that we would use for the design would be a combination of the following 
++ Arial
++ Sans-Serif
++ Times New Roman 
 
 
 ## Wireframes
@@ -76,34 +83,44 @@ For my second project JavaScript I was able to use a wide range of programes to 
 + Balsamiq This was used to create the wireframes during the design phase of the project, initally my design was made on a notepad, until balsamiq was mentioned for use.
 + Google Fonts - This app was used to select the LATO and PT Serif fonts, however mid way into the project i decided to use Arial and Sans Serif though out the project.
 + Am I Responsive, this was used in order to see responsive design throughout the process and view different responsive designs.
++ JSFiddle - https://jsfiddle.net A very useful software, I was able to test my code as I was trying to make my JS work. I could then upload it on to my main IDE. 
+
 
 ## Testing - HTML AND CSS Testing
 + Lighthouse - Lighthouse Test I tested via the Google Developer Lighthouse check. Below is a screenshot of my results.
 
 
-+ The W3C Markup Validation Service https://validator.w3.org The HMTL coding was checked via W3 validator, My check revealed I had no errors or warnings
++ The W3C Markup Validation Service https://validator.w3.org **no faults or warnings** The HMTL coding was checked via W3 validator, My check revealed I had no errors or warnings
 <img src="/readme-images/w3Html.png" alt = "W3 Validator HTML" style="height: 400px; width: 700px;">
 
-+ The W3C CSS Validation Service - Jigsaw The CSS code was check via The W3C CSS Validation Service - Jigsaw https://jigsaw.w3.org/css-validator/. My check revealed I had no errors or warnings
++ The W3C CSS Validation Service - Jigsaw The CSS code was check via The W3C CSS Validation Service **no faults or warnings** - Jigsaw https://jigsaw.w3.org/css-validator/. My check revealed I had no errors or warnings
 <img src="/readme-images/W3css.png" alt = "W3 Jigsaw CSS" style="height: 400px; width: 700px;">
 
 
 
-+ Chrome Stimulator The app was used to test the website on different browsers and devices. Test were operated repeatedly during all devleopment stages.
++ Chrome Stimulator The app was used to test the website on different browsers and devices. Test were operated repeatedly during all devleopment stages. **no faults or warnings**
 
-+ Supported browsers and platforms Google Chrome (latest version) — Windows, Mac OS X, iOS, Android Mozilla Firefox (latest version) — Windows
++ Supported browsers and platforms Google Chrome (latest version) — Windows, Mac OS X, iOS, Android Mozilla Firefox (latest version) — Windows **no faults or warnings**
 
 ## Testing - JavaScript 
-+ Jshint 
++ Jshint - **no faults or warnings**
 
 <img src="/readme-images/jshint.png" alt = "JShint " style="height: 600px; width: 800px;">
 
 ## Test Cases
++ **Introduction to the game page**. The user while on the home page will be displayed with the Welcome text and a option to start the game using the start button. 
+<img src="/readme-images/test-start.png" alt = "Start Page " style="height: 400px; width: 600px;">
+Once the start button has been clicked the function will then display the next screen, which will be the questions. 
 
++ **Questions** The second phase of the quiz game will be the displaying of the questions. The user will have the question displayed at the top of the page, followed by 4 multiple choice answers, if selected right the user will get a score of +1, if incorrect the ser will not score any points. 
+The question counter will display what number of question the user is on and the progree he has made. 
+<img src="/readme-images/questions-test.png" alt = "Questions " style="height: 400px; width: 600px;">
 
++ **Progress through the questions** As the user progresses through the questions there will be an increment of score, if scored correctly, if incorrect then the question counter will go increment and the user will not score anything. Once all 10 questions are over the user will be able to view his score, and be made available a "restart button" for the option to play again. 
+<img src="/readme-images/test-restart.png" alt = "Questions " style="height: 400px; width: 600px;">
 
 ## Fixed Bugs
-+ Spacing for HTML & CSS - after chekcing my coding for both HTML and CSS I realised I had unnecessary spacing. These were deleated and the structure made tidy for viewing.
++ Spacing for HTML & CSS - after checking my coding for both HTML and CSS I realised I had unnecessary spacing. These were deleated and the structure made tidy for viewing.
 + Media Screen Sizes - I realised that my media screen sizes were not displaying the correct layout for mobile devices. These were fixed and checked via Am I responsive app and the google developer tool.
 + After testing on Jshint - mycode had various missing semicolons, which were fixed. 
 
@@ -138,6 +155,7 @@ A list of my credits are below
 + Coding with Nick - Help on creating workable functions. 
 + W3schools.com - Help with CSS coding
 + stackoverflow.com - help with coding, by visiting past forums.
+
 
 ## Acknowledgement
 
