@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,78 +10,78 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Play Off Quiz Game</title>
 </head>
+
 <body>
     <!-- Header displaying PLAY OFF and Font Awesome icons -->
 
     <header class="play"> PLAY OFF<i class="fas fa-futbol"></i></header>
 
-     <!-- Quiz Game Container - Main Box Container with Question display -->
-    <div class ="main-box">
-        <div id ="question-box" class="hide">
-        <div id ="question">Question</div>
+    <!-- Quiz Game Container - Main Box Container with Question display -->
+    <div class="main-box">
+        <div id="question-box" class="hide">
+            <div id="question">Question</div>
 
-    <!-- Answer box - displaying different answer options -->
-        <div id ="answer-buttons" class="btn-grid">
-            <button class="btn">Answer A</button>
-            <button class="btn">Answer B</button>
-            <button class="btn">Answer C</button>
-            <button class="btn">Answer D</button>
+            <!-- Answer box - displaying different answer options -->
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer A</button>
+                <button class="btn">Answer B</button>
+                <button class="btn">Answer C</button>
+                <button class="btn">Answer D</button>
+            </div>
+        </div>
+
+        <!-- Control element - showing both start and next button -->
+        <div class="controls">
+            <button id="start-button" class="start-button btn">Start</button>
+            <button id="next-button" class="next-button btn hide">Next</button>
+
+            <!-- Prior to the game starting, some text to show the user the type of game it is -->
+            <div id="instruction">
+                <h1>Welcome to the Play Off Quiz Game.</h1><br>
+
+                <p>The game consists of 10 trivia questions about football events. <br>
+                    Let's see if you can be a football guru and answer all 10 correctly.
+                </p>
+
+
+            </div>
+        </div>
+
+        <!-- Score and question counter -->
+        <div id="score-bar" class="score-grid hide">
+            <p class="prefix">Score:</p>
+            <div id="score">0</div>
+
+            <div class="counter">
+                <p class="prefix">Question:</p>
+                <h1 id="counter">1/10</h1>
+            </div>
         </div>
     </div>
-
-     <!-- Control element - showing both start and next button -->
-    <div class ="controls">
-        <button id ="start-button" class ="start-button btn">Start</button>
-        <button id ="next-button" class ="next-button btn hide">Next</button>
-
-    <!-- Prior to the game starting, some text to show the user the type of game it is -->
-        <div id="instruction">
-            <h1>Welcome to the Play Off Quiz Game.</h1><br>
-            
-               <p>The game consists of 10 trivia questions about football events. <br>
-               Let's see if you can be a football guru and answer all 10 correctly.
-              </p>
-
-
-        </div>
-    </div>
-
-    <!-- Score and question counter -->
-    <div id ="score-bar" class="score-grid hide">
-        <p class="prefix">Score:</p>
-        <div id="score">0</div>
-
-        <div class="counter">
-            <p class="prefix">Question:</p>
-            <h1 id="counter">1/10</h1> 
-        </div>
-    </div>
-</div>
+    <br>
 
     <!-- Footer and Social Media links, also a subscibe button for user to sign in to view latest offers. -->
-            <footer class="main-footer">
-                <div class = "footer">
-                    <h2 class="follow">Follow us for new games available online</h2>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <div class=" footer-newsletter">
-                <h2 class="join">Subscribe to our Games Newsletter</h2>
-                <form class="signup-form" method= "GET" action= "thank-you.html">
-                <input type="email" placeholder="Enter your email address" id = "footer-email">
-                <input type="submit" value="Sign Up" id="footer-email-btn">
-            </form>
-            </div>
-            </div>
-        
-            </footer>
-        
-        
-        
-            
-           <script src="assets/js/script.js"></script>
-<!-- font awesome script -->
-<script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <footer class="main-footer">
+        <div class="footer">
+            <h2 class="follow">Follow us for new games available online</h2>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

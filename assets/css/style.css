@@ -1,6 +1,6 @@
 /* design body element and add a background image of a football pitch*/
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -9,10 +9,11 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 60vh;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 
-    background: url('../images/football.png') center ;
+    background: url('../images/football.png') center;
 }
 
 /*Size and design Header element to fit inline with the container*/
@@ -22,7 +23,7 @@ body{
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-top:5rem;
+    margin-top: 5rem;
     margin-bottom: 2%;
 }
 
@@ -31,10 +32,11 @@ body{
 .main-box {
     width: 500px;
     height: 60vh;
-    background-color: #fff;;
+    background-color: #fff;
     border-radius: 5px;
-    padding: 15px 5px;
+    padding: 15px 15px;
     box-shadow: 10px 10px;
+
 }
 
 .btn-grid {
@@ -58,24 +60,26 @@ body{
     background-color: #f94230;
 }
 
-.btn.correct{
-    --hue:var(--hue-correct);
-   background-color: lightgreen
+.btn.correct {
+    --hue: var(--hue-correct);
+    background-color: lightgreen
 }
-.btn.wrong{
-    --hue:var(--hue-wrong);
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
     background-color: lightpink;
 
 }
 
-#start-button, #next-button {
+#start-button,
+#next-button {
     font-size: 1rem;
     padding: 10px 20px;
 }
 
 
 #instruction {
-    color:#3a3a3a;
+    color: #3a3a3a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -90,6 +94,7 @@ body{
     align-items: center;
     flex-direction: column-reverse;
 }
+
 .hide {
     display: none;
 }
@@ -102,17 +107,22 @@ body{
     justify-content: center;
     text-align: center;
     height: 10vh;
+    
 }
+
 .footer {
     font-size: 40px;
     padding: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     gap: 5px;
-    width: 100vw;
     margin-bottom: 0;
-     
+    background-color: #f94230;
+    border-radius: 15%;
+    
+
 }
+
 .follow {
 
     color: #fafafa;
@@ -122,6 +132,7 @@ body{
     gap: 5px;
 
 }
+
 #footer-email {
 
     width: 250px;
@@ -134,6 +145,7 @@ body{
     margin: 3rem;
     margin-bottom: 0;
     margin-top: 0;
+    
 
 }
 
@@ -149,6 +161,7 @@ body{
     border: none;
 
 }
+
 .join {
     text-align: center;
     color: #fafafa;
@@ -157,10 +170,12 @@ body{
     font-weight: bold;
     margin-bottom: 0;
     margin-top: 0;
- }
+}
 
+/* design Question Counter and Score elements */
 
-#counter, scores-bar {
+#counter,
+scores-bar {
     text-align: center;
 }
 
@@ -171,18 +186,19 @@ body{
     padding: 0;
 }
 
-#counter, #score {
+#counter,
+#score {
     font-size: 1rem;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
- /**Media Queries**/
+/**Media Queries**/
 
- /* Small Media to Medium screen size from min-width 280px to max-width 500px wide and down */
+/* Small Media to Medium screen size from min-width 280px to max-width 500px wide and down */
 
- @media screen and (min-width: 280px) and (max-width:500px) {
+@media screen and (min-width: 280px) and (max-width:500px) {
     .play {
         font-size: 20px;
         margin-top: 2rem;
@@ -190,21 +206,30 @@ body{
     }
 
     .main-box {
-        width: 100vw;
-        height: 60vh;
+        width: 320px;
+        height: 100vh;
         padding-right: 1rem;
         justify-content: center;
         padding-left: 1rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+
     }
 
     body {
         justify-content: center;
+        overflow-x: hidden;
+        
+        
     }
 
     .footer {
         font-size: 35px;
-        margin-bottom: 0;
-        
+       
+    
+    
+
     }
 
     .follow {
@@ -223,16 +248,16 @@ body{
         margin-bottom: 0;
 
     }
+
     #footer-email {
         width: 60vw;
         font-size: 10px;
     }
-.btn {
-    padding: 1rem 1rem;
-    gap:2px;
+
+    .btn {
+        padding: 1rem 1rem;
+        gap: 2px;
+    }
+
+
 }
-
-
- }
-
-
