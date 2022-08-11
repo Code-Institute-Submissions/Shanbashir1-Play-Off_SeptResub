@@ -1,5 +1,6 @@
 # Project 2 - Play-Off - A Online Football Quiz Game
 ###  For my second project with Code Institue I will need to create a quiz game using HTML, CSS and JavaScript. 
+[View link to my project 2](https://shanbashir1.github.io/Play-Off/)
 
 ## Introduction
 Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
@@ -11,8 +12,8 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 + As a user I would need to be aware of the controls and functions of the game. 
 + As a user I would need to navigate through each question and be displayed my current score and the current question I am on. 
 + As a user I would need to be able to easily play the quiz game, through responsive design.
-+ As a user I would need to restart the game if I have not succesfully answered all 10  questions correctly
-+ As a user I would like to know about further games by registering my email address via the subscribe link.
++ As a user I would need to restart the game once all 10 questions have been answered and selected. 
++ As a user I would like to know about further information and links to the social media pages. 
 
 ## Features 
 ### Header & Logo
@@ -42,12 +43,22 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 + The footer element will navigate the user to various social media pages.
 + "Follow us for new games available online" the following text will be above the social media links, to advise the user of our social media pages. The text will be a standard text format, with the colour of "white"
 
+### Background-Image
++ The background image was selected from [Pexels.com The best free stock photos, royalty free images & videos shared by creators](https://www.pexels.com) 
++ For my background image I selected a image which was related to my design. A football pitch image was selected. 
++ The image contrast worked well with my design.
++ + <img src="/readme-images/football.png" alt = "Background" style="height: 400px; width: 600px;">
+
+
+
 
 ## Future Features 
 + Audio, a possible future feature could be to introduce some background music, for the user to enjoy while working through the quiz.
 + Further Questions, I beleive with further questions the user would be able to enjoy the game and also to seek knowledge, to facts they were not actually aware of. 
 + Timer, a countdown was a feature I wanted to implement but I already had a question and score counter. However since designing the quiz game, I feel a game would benefit from a countdown timer. 
 + A animation feature of a football, to attract the user while playing the quiz. Animation always create a better design and user tend to enjoy while navigating. 
++ A leader board - the user can try to compete with other users. 
++ Easy, Medium, Hard levels for user to be presented with questions focusing on their selected levels. 
 
 ## Color Scheme
  ## Color Scheme
@@ -71,19 +82,26 @@ The Font that we would use for the design would be a combination of the followin
 + I understand my design will go through some changes as I go along, the design was created to give me some design feature and also a rough collection of the how the quiz game would be designed. 
 + Balsamiq was useful in putting together some of the features and how large I wanted to design the game container. The Button were also placed onto the wireframe to get a feel of the layout, prior to designing.
 
-## Technology
+## Technology Used
 For my second project JavaScript I was able to use a wide range of programes to implement my design. A list of the technology features and programes used are listed below, with methods of use.
+### Languages Used 
+1. **HTML** used to create the body structure and layout of the web page. The structure was designed using the coding language used for HTML.
+2.  **CSS** used to create the design and style feature to make the web page colourful and eye cathching for the user. The CSS was used in conjuction with the HTML structure.
+3. **JavaScript** was used to create functions and implement the game. JavaScript is a programming language that is one of the coretechnologies of the world wide web Its is used alongside HTML and CSS. JavaScript was able to create the quiz structure so that the user is able to play the quiz game.
+### Hosting Service
+**GITHUB** was used to create, host and deploy the web design on to the platform. The benefit of github was to create repositories, branches, commits, and pull requests. Github was also a great way to share your design to mentors and other colleagues and tutors to help view your code and seek further input and support.
+### IDE
+**GITPOD** allows you to define your project's configuration in code so you can launch a prebuilt development environment with one click.(Source Google) Gitpod was used to code all my HTML and CSS coding.
 
-+ HTML used to create the body structure and layout of the web page. The structure was designed using the coding language used for HTML.
-+ CSS used to create the design and style feature to make the web page colourful and eye cathching for the user. The CSS was used in conjuction with the HTML structure.
-+ JavaScript was used to create functions and implement the game. JavaScript is a programming language that is one of the coretechnologies of the world wide web Its is used alongside HTML and CSS. JavaScript was able to create the quiz structure so that the user is able to play the quiz game.
-+ GITHUB was used to create, host and deploy the web design on to the platform. The benefit of github was to create repositories, branches, commits, and pull requests. Github was also a great way to share your design to mentors and other colleagues and tutors to help view your code and seek further input and support.
-+ GITPOD Gitpod allows you to define your project's configuration in code so you can launch a prebuilt development environment with one click.(Source Google) Gitpod was used to code all my HTML and CSS coding.
+### Others 
 + Font Awesome Font Awesome was used to select icons to make the images relate to the headers. Font awesome added a attractive image to my page.
 + Balsamiq This was used to create the wireframes during the design phase of the project, initally my design was made on a notepad, until balsamiq was mentioned for use.
 + Google Fonts - This app was used to select the LATO and PT Serif fonts, however mid way into the project i decided to use Arial and Sans Serif though out the project.
 + Am I Responsive, this was used in order to see responsive design throughout the process and view different responsive designs.
 + JSFiddle - https://jsfiddle.net A very useful software, I was able to test my code as I was trying to make my JS work. I could then upload it on to my main IDE. 
++ Stack overflow - for help with issues. 
++ W3Schools - assits with coding issues. 
+
 
 
 ## Testing - HTML AND CSS Testing
