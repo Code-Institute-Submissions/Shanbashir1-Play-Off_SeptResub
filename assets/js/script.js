@@ -14,6 +14,9 @@ let shuffledQuestions, currentQuestionIndex;
 let instructionElement = document.getElementById('instruction');
 const maxQuestions = 10
 
+//Wait for the DOM to finish loading before running the game
+document.addEventListener("DOMContentLoaded", function() {
+
 /**
 * Adding eventListeners to Start & Next Button, so when clicked the function will start the game.
 */
@@ -21,7 +24,9 @@ startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
     setNextQuestion();
+})
 });
+
 /**
 * Start Game Function and setting variables to 0
 * The main page will display some instructions of the type of game, once the start button
@@ -150,7 +155,9 @@ function processResults(isCorrect) {
 
     let counter = parseInt(counterElement.textContent, 10);
     counterElement.innerHTML = questionCounter;
+
 }
+
 
 /**
 * Array of question - Max 10 questions about Football events 
