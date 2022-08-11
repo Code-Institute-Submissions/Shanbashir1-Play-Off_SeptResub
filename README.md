@@ -3,7 +3,7 @@
 [View link to my project 2](https://shanbashir1.github.io/Play-Off/)
 
 ## Introduction
-Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than he will not receive any score. The user will be able to restart the quiz at the end of the game.
+Play off will be multiple choice quiz game, the user will have 10 questions based on a Football event. The user will be displayed with 4 possible answers, in which they must select the correct answer. If the correct answer is selected the user will score a point of +1, if the user answer incorrectly than they will not receive any score. The user will be able to restart the quiz at the end of the game.
 
 <img src="/readme-images/am-i-responsive.png" alt = "Am I Responsive" style="height: 500px; width: 800px;">
 
@@ -13,7 +13,7 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 + As a user I would need to navigate through each question and be displayed my current score and the current question I am on. 
 + As a user I would need to be able to easily play the quiz game, through responsive design.
 + As a user I would need to restart the game once all 10 questions have been answered and selected. 
-+ As a user I would like to know about further information and links to the social media pages. 
++ As a user I would like to know about further information and be made available links to the social media pages. 
 
 ## Features 
 ### Header & Logo
@@ -26,16 +26,16 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 ### Container for the Game (Main-box)
 + The Game container, which is referred to as the "main-box" within my HTML, will be the main container in which both questions and answer will be displayed. 
 + Within this feature, both the start and next button will be displayed for the user to select as they progress through the game. 
-+ The user will also be present with a score tally and a question counter for them to be made aware of their progress, this will be located at the bottom of the container. The color font will be black, with clear visability for the user. 
++ The user will also be presented with a score tally and a question counter for them to be made aware of their progress, this will be located at the bottom of the container. The color font will be black, with clear visability for the user. 
 + The game container will be of a white background. 
 + The questions will be displayed at the top of the game container in standard text. 
 + The total number of questions will be 10 and will change as the user presses the "next button".
-+ There will be a total of 4 multiple choice answers for the user to select. 3 of this questions will be "wrong" with 1 of the answers being "correct". If the user select's the incorrect answer than the color code will change and select the correct answer (light green) and highlight the incorrect answers as (lightpink).
-+ The hover feature will be a color of red, advising the user of the selected answer. 
++ There will be a total of 4 multiple choice answers for the user to select. 3 of the questions will be "wrong" with 1 of those answers being  the "correct" one. If the user select's the incorrect answer than the color code will change and select the correct answer (green) and highlight the incorrect answers as (pink).
++ The hover feature will be a color of black, advising the user of the selected answer. 
 
 ### Start, Next and Restart Button within the container. 
 + The start button will show on the main page with the welcome text, before commencing with the quiz
-+ Once the strart button has been selected the start button will dissapear and the next button will show once the answer has been selected. 
++ Once the start button has been selected the start button will dissapear and the next button will show once the answer has been selected. 
 + The next button will only show once a answer has been selected. 
 + At the end of the game the user will have a option to restart the game with a "Restart Button"
 
@@ -55,12 +55,11 @@ Play off will be multiple choice quiz game, the user will have 10 questions base
 ## Future Features 
 + Audio, a possible future feature could be to introduce some background music, for the user to enjoy while working through the quiz.
 + Further Questions, I beleive with further questions the user would be able to enjoy the game and also to seek knowledge, to facts they were not actually aware of. 
-+ Timer, a countdown was a feature I wanted to implement but I already had a question and score counter. However since designing the quiz game, I feel a game would benefit from a countdown timer. 
-+ A animation feature of a football, to attract the user while playing the quiz. Animation always create a better design and user tend to enjoy while navigating. 
++ Timer, a countdown was a feature I wanted to implement but I already had a question and score counter. However since designing the quiz game, I feel the game would benefit from a countdown timer. 
++ A animation feature of a football, to attract the user while playing the quiz. Animation always create a better design and user's tend to enjoy while navigating. 
 + A leader board - the user can try to compete with other users. 
 + Easy, Medium, Hard levels for user to be presented with questions focusing on their selected levels. 
 
-## Color Scheme
  ## Color Scheme
 + ![#00cd00](https://via.placeholder.com/15/00cd00/00cd00.png) `#00cd00`
 + ![#5a5a](https://via.placeholder.com/15/5a5a/5a5a.png) `#5a5a`
@@ -106,6 +105,7 @@ For my second project JavaScript I was able to use a wide range of programes to 
 
 ## Testing - HTML AND CSS Testing
 + Lighthouse - Lighthouse Test I tested via the Google Developer Lighthouse check. Below is a screenshot of my results.
+<img src="/readme-images/lighthouse.png" alt = "Lighthouse Test" style="height: 500px; width: 700px;">
 
 
 + The W3C Markup Validation Service https://validator.w3.org **no faults or warnings** The HMTL coding was checked via W3 validator, My check revealed I had no errors or warnings
@@ -180,8 +180,3 @@ A list of my credits are below
 + My mentor Rohit Sharma @rohit_mentor - Great advice and support throughout my project journey, I was guided well with plenty of advise and support.
 + Tutor Suport - So much help from a wide diversity of tutors. They were able to support me in good time and made me realise when things became difficult.
 + Slack - Always so much help from colleagues, the level of support is undoubtedly amazing.
-
-
-
-
-
