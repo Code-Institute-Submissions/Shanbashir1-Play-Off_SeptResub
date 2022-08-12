@@ -7,11 +7,11 @@ body {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 60vh;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+
+/*background image from Pexels.com*/
 
     background: url('../images/football.png') center;
 }
@@ -23,8 +23,8 @@ body {
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-top: 5rem;
-    margin-bottom: 2%;
+    margin-top: 1rem;
+    margin-bottom: 1%;
 }
 
 /*Design box element & buttons which will operate the container element for the quiz game*/
@@ -107,7 +107,7 @@ body {
     justify-content: center;
     text-align: center;
     height: 10vh;
-    
+
 }
 
 .footer {
@@ -119,7 +119,7 @@ body {
     margin-bottom: 0;
     background-color: #f94230;
     border-radius: 15%;
-    
+
 
 }
 
@@ -145,7 +145,7 @@ body {
     margin: 3rem;
     margin-bottom: 0;
     margin-top: 0;
-    
+
 
 }
 
@@ -207,28 +207,29 @@ scores-bar {
 
     .main-box {
         width: 320px;
-        height: 100vh;
+        height: 50vh;
         padding-right: 1rem;
         justify-content: center;
         padding-left: 1rem;
         overflow-x: hidden;
         overflow-y: hidden;
-        
+
 
     }
 
     body {
         justify-content: center;
         overflow-x: hidden;
-        
-        
+        margin: 0;
+
+
     }
 
     .footer {
         font-size: 35px;
-       
-    
-    
+
+
+
 
     }
 

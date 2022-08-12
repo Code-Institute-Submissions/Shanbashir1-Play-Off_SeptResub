@@ -73,6 +73,7 @@ function showQuestion(question) {
 
         if (answer.correct) {
             button.dataset.correct = answer.correct;
+            
         }
 
         button.addEventListener('click', selectAnswer);
@@ -97,8 +98,8 @@ function resetState() {
 /**
  * This function will give the user the ability to select answers from the arrays of listed answers. 
  */
-function selectAnswer(i) {
-    let selectedButton = i.target;
+function selectAnswer(answer) {
+    let selectedButton = answer.target;
     let correct = selectedButton.dataset.correct;
 
     processResults(correct);
@@ -126,6 +127,7 @@ function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
+    
     }
     else {
         element.classList.add('wrong');
@@ -155,12 +157,10 @@ function processResults(isCorrect) {
 
     let counter = parseInt(counterElement.textContent, 10);
     counterElement.innerHTML = questionCounter;
-
 }
 
-
 /**
-* Array of question - Max 10 questions about Football events 
+* Array of questions - Max 10 questions about Football events 
 */
 
 let questions = [
@@ -272,10 +272,5 @@ let questions = [
             { text: 'Germany', correct: false },
             { text: 'Italy', correct: false }
         ]
-
     },
-
-
 ];
-
-

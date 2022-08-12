@@ -9,6 +9,7 @@
     <meta name="keywords" content="Play off, quiz, game, trivia, football">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Play Off Quiz Game</title>
+      <!-- Favicon Icons of a football set to Home page -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico.png">
 </head>
 
@@ -20,43 +21,43 @@
     <!-- Quiz Game Container - Main Box Container with Question display -->
     <div class="main-box">
         <div id="question-box" class="hide">
-            <div id="question">Question</div>
+        <div id="question">Question</div>
 
-            <!-- Answer box - displaying different answer options -->
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer A</button>
-                <button class="btn">Answer B</button>
-                <button class="btn">Answer C</button>
-                <button class="btn">Answer D</button>
-            </div>
+    <!-- Answer box - displaying different answer options -->
+    <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer A</button>
+            <button class="btn">Answer B</button>
+            <button class="btn">Answer C</button>
+            <button class="btn">Answer D</button>
         </div>
+    </div>
 
-        <!-- Control element - showing both start and next button -->
+    <!-- Control element - showing both start and next button -->
         <div class="controls">
             <button id="start-button" class="start-button btn">Start</button>
             <button id="next-button" class="next-button btn hide">Next</button>
 
-            <!-- Prior to the game starting, some text to show the user the type of game it is -->
+    <!-- Prior to the game starting, some text to show the user the type of game it is -->
             <div id="instruction">
-                <h1>Welcome to the Play Off Quiz Game.</h1><br>
+            <h1>Welcome to the Play Off Quiz Game.</h1><br>
 
-                <p>The game consists of 10 trivia questions about football events. <br>
-                    Let's see if you can be a football guru and answer all 10 correctly.
-                </p>
+            <p>The game consists of 10 trivia questions about football events. <br>
+               Let's see if you can be a football guru and answer all 10 correctly.
+            </p>
 
 
-            </div>
         </div>
+    </div>
 
-        <!-- Score and question counter -->
+     <!-- Score and question counter -->
         <div id="score-bar" class="score-grid hide">
             <p class="prefix">Score:</p>
             <div id="score">0</div>
 
             <div class="counter">
-                <p class="prefix">Question:</p>
-                <h1 id="counter">1/10</h1>
-            </div>
+            <p class="prefix">Question:</p>
+            <h1 id="counter">1/10</h1>
+         </div>
         </div>
     </div>
     <br>
@@ -76,13 +77,12 @@
         </div>
 
     </footer>
-
-
-
-
+    <!-- JavaScript link-->
     <script src="assets/js/script.js"></script>
+
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
