@@ -1,3 +1,4 @@
+
 /**
  * Created variable and assigned elements to each.
  */
@@ -153,7 +154,8 @@
  
      let counter = parseInt(counterElement.textContent, 10);
      counterElement.innerHTML = questionCounter;
- }
+ 
+    }
  
  /**
   * Array of questions - Max 10 questions about Football events 
