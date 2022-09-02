@@ -13,6 +13,7 @@
  let questionCounter;
  let shuffledQuestions, currentQuestionIndex;
  let instructionElement = document.getElementById('instruction');
+ let answered = false;
  const maxQuestions = 10
  
  //Wait for the DOM to finish loading before running the game
@@ -64,6 +65,7 @@
   * This function will show the Questions and allow the user to select the answer. 
   */
  function showQuestion(question) {
+    answered = false;
      questionCounter++;
      counterElement.innerHTML = questionCounter;
      questionElement.innerText = question.question;
@@ -99,6 +101,7 @@
   * This function will give the user the ability to select answers from the arrays of listed answers. 
   */
  function selectAnswer(answer) {
+    if (!answered) {
      let selectedButton = answer.target;
      let correct = selectedButton.dataset.correct;
  
@@ -114,9 +117,12 @@
      } else {
          startButton.innerText = "Restart";
          startButton.classList.remove('hide');
+         alert("End Of Game. Thank you for playing. Press the restart button now to play again.")
      }
  
  }
+ answered = true;
+}
  
  /**
   * This function selects the correct and incorrect answers using "correct and wrong elements". 
